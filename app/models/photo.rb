@@ -5,6 +5,6 @@ validate :image_size_validation
  
 private
   def image_size_validation
-    errors[:image] << "should be less than 500KB" if image.size > 0.5.megabytes
+    errors[:image] << "should be less than 10.5 MB" if image.size > 10.5.megabytes
   end
 end
